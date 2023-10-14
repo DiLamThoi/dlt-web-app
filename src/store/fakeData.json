@@ -1,3 +1,46 @@
 {
-    "pattern": "pattern"
+    "Job": {
+        "job1": {
+            "title": "Lập trình viên ReactJS, ReactNative",
+            "description": "Lập trình viện FrontEnd",
+            "educationLevel": 12,
+            "generalTitle":"Lập trình viên",
+            "level": "junior",
+            "salary": "1000$/m",
+            "location": "ĐH Bách Khoa Hà Nội",
+            "type": "full-time",
+            "hours": 8,
+            "startTime": 0,
+            "applicationDeadline": 0,
+            "companyId": "HUST"
+        },
+        "job2": {
+            "title": "Gia sư Toán",
+            "description": "Gia sư Toán lớp 12",
+            "educationLevel": 12,
+            "generalTitle":"Gia sư",
+            "level": "",
+            "salary": "200$/m",
+            "location": "ĐH Bách Khoa Hà Nội",
+            "type": "freelance",
+            "hours": 8,
+            "startTime": 0,
+            "applicationDeadline": 0,
+            "companyId": "HUST"
+        },
+        "job3": {
+            "title": "Tiktoker",
+            "description": "Live Stream trên nền tảng Tiktok",
+            "educationLevel": 9,
+            "generalTitle":"Streamer",
+            "level": "",
+            "salary": "xxx$/m",
+            "location": "Đai học Bôn ba",
+            "type": "part-time",
+            "hours": 4,
+            "startTime": 0,
+            "applicationDeadline": 0,
+            "companyId": "tiktoker"
+        }
+    }
 }
