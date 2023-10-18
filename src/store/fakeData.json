@@ -12,7 +12,7 @@
             "hours": 8,
             "startTime": 0,
             "applicationDeadline": 0,
-            "companyId": "HUST"
+            "employerId": "HUST"
         },
         "job2": {
             "title": "Gia sư Toán",
@@ -26,7 +26,7 @@
             "hours": 8,
             "startTime": 0,
             "applicationDeadline": 0,
-            "companyId": "HUST"
+            "employerId": "HUST"
         },
         "job3": {
             "title": "Tiktoker",
@@ -40,7 +40,7 @@
             "hours": 4,
             "startTime": 0,
             "applicationDeadline": 0,
-            "companyId": "tiktoker"
+            "employerId": "tiktoker"
         }
     }
 }
