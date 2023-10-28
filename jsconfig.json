@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./",
+        "paths": {
+            "@dlt-components/*": ["dlt-module-commons/dlt-components/*"],
+            "@dlt-object-base/*": ["dlt-module-commons/dlt-object-base/*"],
+            // Custom module
+            "@dlt-module-base/*": ["dlt-module-commons/dlt-object-base/dlt-base/*"],
+            "@dlt-module-job/*": ["dlt-module-commons/dlt-object-base/dlt-job/*"],
+        }
+    },
+    "include": ["src/**/*", "dlt-module-commons/**/*"]
+}
