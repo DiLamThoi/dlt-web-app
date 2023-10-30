@@ -1,5 +1,4 @@
-
-import { useCallback } from 'react';
+import React, { useCallback } from 'react';
 import { BrowserRouter as Router, Route, Routes, useNavigate } from 'react-router-dom';
 import { Layout } from 'antd';
 import { RequireAuth, useSignOut } from 'react-auth-kit';
@@ -22,14 +21,14 @@ const HomeScreen = () => {
     }, [navigate, signOut]);
 
     return (
-        <RequireAuth loginPath='/login'>
-            <Layout className='dlt-layout'>
-                <Sider className='dlt-sider' width={200} theme="light">
+        <RequireAuth loginPath="/login">
+            <Layout className="dlt-layout">
+                <Sider className="dlt-sider" width={200} theme="light">
                     <SideBarContainer />
                 </Sider>
                 <Layout>
                     {/* <Header className='dlt-header'>Header</Header> */}
-                    <Content className='dlt-content'>
+                    <Content className="dlt-content">
                         <Routes>
                             {/* <Route path="/login" element={<LoginScreen />} /> */}
                             <Route path="/profile" Component={ProfileScreen} />

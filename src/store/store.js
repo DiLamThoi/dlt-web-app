@@ -10,7 +10,7 @@ const sagaMiddleware = createSagaMiddleware();
 const store = configureStore({
     reducer: rootReducer,
     preloadedState: fakeData,
-    middleware: [...getDefaultMiddleware(), sagaMiddleware]
+    middleware: [...getDefaultMiddleware(), sagaMiddleware],
 });
 
 sagaMiddleware.run(rootSaga);
