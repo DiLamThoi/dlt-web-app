@@ -7,6 +7,7 @@
             // Custom module
             "@dlt-module-base/*": ["dlt-module-commons/dlt-object-base/dlt-base/*"],
             "@dlt-module-job/*": ["dlt-module-commons/dlt-object-base/dlt-job/*"],
+            "@dlt-module-employer/*": ["dlt-module-commons/dlt-object-base/dlt-employer/*"],
         }
     },
     "include": ["src/**/*", "dlt-module-commons/**/*"]

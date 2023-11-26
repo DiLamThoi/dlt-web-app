@@ -14,6 +14,7 @@ export default defineConfig({
             // Module
             '@dlt-module-base': path.resolve(__dirname, './dlt-module-commons/dlt-object-base/dlt-base'),
             '@dlt-module-job': path.resolve(__dirname, './dlt-module-commons/dlt-object-base/dlt-job'),
+            '@dlt-module-employer': path.resolve(__dirname, './dlt-module-commons/dlt-object-base/dlt-employer'),
         },
     },
 });
