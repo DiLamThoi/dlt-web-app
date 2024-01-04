@@ -7,6 +7,7 @@ import SettingScreen from '@dlt-components/screen/SettingScreen/SettingScreen';
 import JobListScreen from '@dlt-components/screen/JobListScreen/JobListScreen';
 import EmployerScreen from '@dlt-components/screen/EmployerScreen/EmployerScreen';
 import SideBarContainer from '@dlt-components/components/sidebar/SideBarContainer';
+import InfoBarGlobal from '@dlt-components/components/inforBar/global/infoBarGlobal';
 
 const { Header, Sider, Content, Footer } = Layout;
 
@@ -41,6 +42,7 @@ const HomeScreen = () => {
                     </Content>
                     {/* <Footer className='dlt-footer'>Footer</Footer> */}
                 </Layout>
+                <InfoBarGlobal />
             </Layout>
         </RequireAuth>
     );
