@@ -1,0 +1,180 @@
+{
+	"DLT License": {
+		"prefix": "dltLicense",
+		"body": [
+			"/**",
+			" * DLT License",
+			" *",
+			" * Copyright (c) ${CURRENT_YEAR} TruongNBN",
+			" *",
+			" * Permission is hereby granted, free of charge, to any person obtaining a copy",
+			" * of this software and associated documentation files (the \"Software\"), to deal",
+			" * in the Software without restriction, including without limitation the rights",
+			" * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell",
+			" * copies of the Software, and to permit persons to whom the Software is",
+			" * furnished to do so, subject to the following conditions:",
+			" *",
+			" * The above copyright notice and this permission notice shall be included in all",
+			" * copies or substantial portions of the Software.",
+			" *",
+			" * THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR",
+			" * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,",
+			" * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE",
+			" * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER",
+			" * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,",
+			" * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE",
+			" * SOFTWARE.",
+			" *",
+			" * @modifined created by ${email}@gmail.com on ${CURRENT_DATE}/${CURRENT_MONTH}/${CURRENT_YEAR}",
+			" * @history Example: ${email}@gmail.com đã thay đổi abcxyz - ${CURRENT_DATE}/${CURRENT_MONTH}/${CURRENT_YEAR}",
+			" */",
+			""
+		],
+		"description": "DLT License with Modification History"
+	},
+	"DLT Container Component": {
+		"prefix": "dltcc",
+		"body": [
+			"import React from 'react';",
+			"import PropTypes from 'prop-types';",
+			"import { useDispatch, useSelector } from 'react-redux';",
+			"import ${name}View from './${name}View';",
+			"",
+			"const ${name}Container = (props) => {",
+			"    const dispatch = useDispatch();",
+			"    return <${name}View />;",
+			"};",
+			"",
+			"${name}Container.propTypes = {};",
+			"",
+			"${name}Container.defaultProps = {};",
+			"",
+			"export default ${name}Container;",
+			""
+		],
+		"description": "Create a DLT Container Component."
+	},
+	"DLT View Component": {
+		"prefix": "dltvc",
+		"body": [
+			"import React from 'react';",
+			"import PropTypes from 'prop-types';",
+			"import { theme } from 'antd';",
+			"",
+			"const ${name}View = (props) => {",
+			"    const { token } = theme.useToken();",
+			"    return <div />;",
+			"};",
+			"",
+			"${name}View.propTypes = {};",
+			"",
+			"${name}View.defaultProps = {};",
+			"",
+			"export default ${name}View;",
+			""
+		],
+		"description": "Create a DLT View Component."
+	},
+	"DLT Object Slice": {
+		"prefix": "dltoslice",
+		"body": [
+			"import { createObjectSlice } from '@dlt-object-base/dlt-base/utils/createSlice';",
+			"import StoreConfig from '@dlt-object-base/storeConfig';",
+			"",
+			"const ${name}Slice = createObjectSlice(StoreConfig.${name});",
+			"",
+			"export default ${name}Slice;",
+			""
+		],
+		"description": "Create a DLT Object Slice."
+	},
+	"DLT Edge Slice": {
+		"prefix": "dlteslice",
+		"body": [
+			"import { createEdgeSlice } from '@dlt-object-base/dlt-base/utils/createSlice';",
+			"import StoreConfig from '@dlt-object-base/storeConfig';",
+			"",
+			"const has${1:name}Slice = createEdgeSlice(StoreConfig.has${1/(.*)/${1:/capitalize}/});",
+			"",
+			"export default has${1/(.*)/${1:/capitalize}/}Slice;",
+			""
+		],
+		"description": "Create a DLT Edge Slice."
+	},
+	"DLT Object Selector": {
+		"prefix": "dltoSelector",
+		"body": [
+			"import StoreConfig from '@dlt-object-base/storeConfig';",
+			"import objectSelector from '@dlt-module-base/object/objectSelector';",
+			"import createSelector from '@dlt-module-base/utils/createSelector';",
+			"",
+			"const statePath = [StoreConfig.${name}];",
+			"",
+			"const ${name}Selector = createSelector(objectSelector, statePath);",
+			"",
+			"export default ${name}Selector;",
+			""
+		],
+		"description": "Create a DLT Object Selector."
+	},
+	"DLT Edge Selector": {
+		"prefix": "dlteSelector",
+		"body": [
+			"import StoreConfig from '@dlt-object-base/storeConfig';",
+			"import edgeSelector from '@dlt-object-base/dlt-base/edge/edgeSelector';",
+			"import createSelector from '@dlt-module-base/utils/createSelector';",
+			"",
+			"const statePath = [StoreConfig.${name}];",
+			"",
+			"const ${name}Selector = createSelector(edgeSelector, statePath);",
+			"",
+			"export default ${name}Selector;"
+		],
+		"description": "Create a DLT Edge Base."
+	},
+	"DLT Action": {
+		"prefix": "dltAction",
+		"body": [
+			"import { createAction } from '@reduxjs/toolkit';",
+			"import ${1:name}Slice from '../slice/${1}Slice';",
+			"import has${1/(.*)/${1:/capitalize}/}Slice from '../slice/has${1/(.*)/${1:/capitalize}/}Slice';",
+			"",
+			"export const ${1/(.*)/${1:/upcase}/}_ACTION = {};",
+			"",
+			"export const ${1}UiAction = ${1}.actions;",
+			"export const has${1/(.*)/${1:/capitalize}/}UiAction = has${1/(.*)/${1:/capitalize}/}Slice.actions;",
+			"",
+			"export const ${1}ApiAction = {};",
+			"",
+			"const ${1}Action = {",
+			"    objectAction: ${1}UiAction,",
+			"    edgeAction: has${1/(.*)/${1:/capitalize}/}UiAction,",
+			"    apiAction: ${1}ApiAction,",
+			"};",
+			"export default ${1}Action;",
+			""
+		],
+		"description": "Create a DLT Action."
+	},
+	"DLT Sagas": {
+		"prefix": "dltSaga",
+		"body": [
+			"import { all } from 'redux-saga/effects';",
+			"",
+			"/** Handle Saga action */",
+			"",
+			"/** Listen Saga action */",
+			"",
+			"/** Export Sagas */",
+			"const listSagas = [];",
+			"",
+			"const ${1:name}Sagas = function* ${1:name}Sagas() {",
+			"    yield all(listSagas.map((saga) => saga()));",
+			"};",
+			"",
+			"export default ${1:name}Sagas;",
+			""
+		],
+		"description": "Create a DLT Saga."
+	}
+}
