@@ -170,7 +170,7 @@ module.exports = {
         'react/jsx-curly-spacing': 2, // Yêu cầu khoảng trắng xung quanh các biểu thức trong cặp dấu ngoặc nhọn của JSX
         'react/no-string-refs': 2, // Cảnh báo khi sử dụng chuỗi làm tham chiếu (ref) cho thành phần
         'react/jsx-wrap-multilines': ['error', { declaration: false, assignment: false }], // Cảnh báo khi không bọc JSX nhiều dòng vào dấu ngoặc nhọn
-        'react/jsx-no-bind': 2, // Cảnh báo khi sử dụng hàm "bind" trong JSX
+        // 'react/jsx-no-bind': 2, // Cảnh báo khi sử dụng hàm "bind" trong JSX
         'react/require-render-return': 2, // Cảnh báo khi phương thức "
         'react/no-array-index-key': 2, // Cảnh báo khi sử dụng mảng chỉ mục làm khóa (key) trong danh sách các thành phần (component) trong React
         'react/jsx-indent': 0, // Tắt cảnh báo liên quan đến việc thụt lề (indentation) trong JSX
