@@ -134,7 +134,7 @@ module.exports = {
         'func-names': 2, // Yêu cầu các hàm phải có tên (đặt tên cho hàm)
         'key-spacing': [2, { beforeColon: false, afterColon: true }], // Yêu cầu có khoảng trắng sau dấu hai chấm trong cặp key-value của đối tượng
         'new-cap': [0, { newIsCap: true }], // Tắt cảnh báo khi không sử dụng "new" cho các đối tượng tạo mới
-        'no-multiple-empty-lines': [2, { max: 2 }], // Yêu cầu không có quá nhiều dòng trống liên tiếp
+        'no-multiple-empty-lines': [2, { max: 1 }], // Yêu cầu không có quá nhiều dòng trống liên tiếp
         'no-new-object': 2, // Cảnh báo khi sử dụng cú pháp "{...}" để tạo mới đối tượng
         'no-spaced-func': 2, // Cảnh báo khi có khoảng trắng sau tên hàm
         'no-extra-parens': [2, 'functions'], // Cảnh báo khi có nhiều dấu ngoặc đơn không cần thiết cho hàm
