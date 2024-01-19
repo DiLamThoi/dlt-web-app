@@ -59,10 +59,10 @@
 		"body": [
 			"import React from 'react';",
 			"import PropTypes from 'prop-types';",
-			"import { theme } from 'antd';",
+			"import { useToken } from '@dlt-components/hooks';",
 			"",
 			"const ${name}View = (props) => {",
-			"    const { token } = theme.useToken();",
+			"    const token = useToken();",
 			"    return <div />;",
 			"};",
 			"",
