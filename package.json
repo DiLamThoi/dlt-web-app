@@ -9,6 +9,7 @@
     "build": "vite build"
   },
   "dependencies": {
+    "@ant-design/happy-work-theme": "^1.0.0",
     "@ant-design/icons": "^5.2.5",
     "@reduxjs/toolkit": "^1.9.5",
     "@uidotdev/usehooks": "^2.4.1",

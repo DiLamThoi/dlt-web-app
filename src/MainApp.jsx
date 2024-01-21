@@ -1,12 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import App from './App.jsx';
 
 // Providers
 import store from './store/store';
 import { Provider } from 'react-redux';
 import { AuthProvider } from 'react-auth-kit';
-import { ConfigProvider as AntdProvider } from 'antd';
-import { Router } from 'react-router-dom';
+import { AntdProvider } from '@dlt-components/context/antd/AntdContext.jsx';
 
 const MainApp = () => (
     <React.StrictMode>

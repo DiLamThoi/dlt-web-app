@@ -24,7 +24,7 @@ const HomeScreen = () => (
                         <Route path="/jobs" Component={JobListScreen} />
                         <Route path="/employers" Component={EmployerScreen} />
                         <Route path="/profile" Component={ProfileScreen} />
-                        {/* <Route path="/settings" Component={SettingScreen} /> */}
+                        <Route path="/settings" Component={SettingScreen} />
                         {/* Default route */}
                         <Route path="/" Component={JobListScreen} />
                         <Route path="*" Component={JobListScreen} />
