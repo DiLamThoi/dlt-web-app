@@ -13,21 +13,20 @@ const { Sider, Content } = Layout;
 
 const HomeScreen = () => (
     <RequireAuth loginPath="/login">
-        <Layout className="dlt-layout">
-            <Sider className="dlt-sider" width={200} theme="light">
+        <Layout>
+            <Sider theme="light">
                 <SideBarContainer />
             </Sider>
-            <Layout >
-                <Content className="dlt-content">
+            <Layout>
+                <Content>
                     <Routes>
-                        {/* <Route path="/login" element={<LoginScreen />} /> */}
                         <Route path="/jobs" Component={JobListScreen} />
                         <Route path="/employers" Component={EmployerScreen} />
                         <Route path="/profile" Component={ProfileScreen} />
                         <Route path="/settings" Component={SettingScreen} />
                         {/* Default route */}
                         <Route path="/" Component={JobListScreen} />
-                        <Route path="*" Component={JobListScreen} />
+                        {/* <Route path="*" Component={JobListScreen} /> */}
                     </Routes>
                 </Content>
             </Layout>
