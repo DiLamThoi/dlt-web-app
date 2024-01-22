@@ -17,7 +17,7 @@ const HomeScreen = () => (
             <Sider className="dlt-sider" width={200} theme="light">
                 <SideBarContainer />
             </Sider>
-            <Layout>
+            <Layout >
                 <Content className="dlt-content">
                     <Routes>
                         {/* <Route path="/login" element={<LoginScreen />} /> */}

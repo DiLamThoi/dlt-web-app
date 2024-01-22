@@ -5,7 +5,7 @@ import App from './App.jsx';
 import store from './store/store';
 import { Provider } from 'react-redux';
 import { AuthProvider } from 'react-auth-kit';
-import { AntdProvider } from '@dlt-components/context/antd/AntdContext.jsx';
+import { AntdProvider } from '@dlt-components/context/AntdContext';
 
 const MainApp = () => (
     <React.StrictMode>
